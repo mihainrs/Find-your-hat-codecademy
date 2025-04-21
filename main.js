@@ -42,8 +42,6 @@ function playerMovement(movement) {
         pCol++;
     } else console.log('Can\'t move there!');
 
-    console.log(pRow, pCol);
-
     //Check player's position
     if (myField.field[pRow][pCol] === '^') {
         console.log('You win! :D ');
@@ -56,7 +54,7 @@ function playerMovement(movement) {
     } else {
         myField.field[pRow][pCol] = '*';
     }
-
+    console.log(myField.toString());
 }
 
 //handling reset logic
